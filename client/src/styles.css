@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html {
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+/* general */
+body {
+    margin: 0;
+    background: #999e9e;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/*paint place*/
+.paintplace {
+    display: flex;
+    height: 100vh;
+    width: 80%;
+    background-color: rgb(205, 206, 255);
+    align-content: center;
+    justify-content: center;
+}
+
+
+
+/*canvas*/
+canvas {
+    position: absolute;
+    background-color: #9db0cc;
+
+}
+
+.scaler {
+    display: block;
+}
+
+/*PixelCursor*/
+.pixelcursor{
+    display: block;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+    max-height: max-content;
+}
+
+
+/*control bar*/
+.controlbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 20%;
+    background-color: #444366;
+    z-index: 2;
+}
+.placebutton {
+    margin-top: 10%;
+    height: 5rem;
+    width: 10rem;
+}
+
+.colorpicker {
+    display: flex;
+    width: 100%;
+    height:  40vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.coordinates {
+    background-color: #999e9e;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 5rem;
+}
+
+.download {
+    margin-top: 2rem;
+    height: 1.5rem;
+}
